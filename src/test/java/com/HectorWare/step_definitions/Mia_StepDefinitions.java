@@ -1,5 +1,6 @@
 package com.HectorWare.step_definitions;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -37,5 +38,30 @@ public class Mia_StepDefinitions {
 
     @When("user enter valid Username in username field")
     public void userEnterValidUsernameInUsernameField() {
+    }
+
+    @And("user enter Invalid password in password field")
+    public void userEnterInvalidPasswordInPasswordField() {
+    }
+
+    @When("user to verify login page is displayed in the middle of the page")
+    public void userToVerifyLoginPageIsDisplayedInTheMiddleOfThePage() {
+
+    }
+
+    @Given("user to navigate to webpage given")
+    public void userToNavigateToWebpageGiven() {
+    }
+
+    @Given("user to navigate to URL given")
+    public void userToNavigateToURLGiven() {
+    }
+
+    @And("user enter Blank Username in username field")
+    public void userEnterBlankUsernameInUsernameField() {
+    }
+
+    @And("user enter Blank password in password field")
+    public void userEnterBlankPasswordInPasswordField() {
     }
 }
