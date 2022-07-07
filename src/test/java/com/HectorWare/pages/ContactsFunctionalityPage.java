@@ -40,6 +40,7 @@ public class ContactsFunctionalityPage {
     @FindBy(xpath = "//input[@placeholder='Add contact in group']")
     public WebElement groupInputBox;
 
+
     @FindBy(xpath = "//span[text()=\"cydeo10\"]")
     public WebElement chosenGroup;
 
