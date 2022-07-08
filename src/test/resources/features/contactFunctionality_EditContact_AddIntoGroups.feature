@@ -13,14 +13,12 @@ Feature: Contact functionality
     And User refreshes the page
     Then User verifies contact named "cbd" is displayed on the contacts column
 
-  @wipAyse
   Scenario: Edit a contact that is already created
     Given User clicks on the contact named "cbd"
     And User enters all required fields
     And User refreshes the page
     Then User verifies contact is successfully edited
 
-  @wipAyse
   Scenario: Add a contact into a group
     Given User clicks on the contact named "cbd"
     And User clicks on groups input box and selects "cydeo10" group

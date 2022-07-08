@@ -9,6 +9,7 @@ Feature: Contact functionality
     And User clicks on the contacts button
     Then Webpage title contains Contacts
 
+    @wipAyse
   Scenario: Create a new contact
     Given User clicks on the + New contact button
     And User enters "cbd" into the name input box

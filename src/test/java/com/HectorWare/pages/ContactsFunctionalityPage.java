@@ -20,7 +20,7 @@ public class ContactsFunctionalityPage {
     public WebElement newContactButton;
 
     @FindBy(id = "contact-fullname")
-    public WebElement contactFullNameInputBox;
+    public WebElement fullNameInputBox;
 
     @FindBy(id = "contact-org")
     public WebElement companyInputBox;
