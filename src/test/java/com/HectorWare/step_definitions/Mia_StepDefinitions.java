@@ -64,4 +64,80 @@ public class Mia_StepDefinitions {
     @And("user enter Blank password in password field")
     public void userEnterBlankPasswordInPasswordField() {
     }
+
+    @Given("the user login with valid credentials")
+    public void theUserLoginWithValidCredentials() {
+    }
+
+    @Given("user to verify if Profile settings page is displayed")
+    public void userToVerifyIfProfileSettingsPageIsDisplayed() {
+    }
+
+    @When("user write the username into the username box")
+    public void userWriteTheUsernameIntoTheUsernameBox() {
+    }
+
+    @And("user enter the email in the email field")
+    public void userEnterTheEmailInTheEmailField() {
+    }
+
+    @And("user enters phone number into phone box")
+    public void userEntersPhoneNumberIntoPhoneBox() {
+    }
+
+    @And("user enters an address into the address box")
+    public void userEntersAnAddressIntoTheAddressBox() {
+    }
+
+    @And("user click on the Personal Info button on the right")
+    public void userClickOnThePersonalInfoButtonOnTheRight() {
+    }
+
+    @Then("user to verify and see all entered info is displayed correctly")
+    public void userToVerifyAndSeeAllEnteredInfoIsDisplayedCorrectly() {
+    }
+
+    @When("user click on the profile table")
+    public void userClickOnTheProfileTable() {
+    }
+
+    @Given("user hoover over the profile tab")
+    public void userHooverOverTheProfileTab() {
+    }
+
+    @And("user verify to see the drop-down item")
+    public void userVerifyToSeeTheDropDownItem() {
+    }
+
+    @And("user hoover over to the settings")
+    public void userHooverOverToTheSettings() {
+    }
+
+    @And("user click on the settings")
+    public void userClickOnTheSettings() {
+    }
+
+    @Then("user verify settings page was displayed correctly")
+    public void userVerifySettingsPageWasDisplayedCorrectly() {
+    }
+
+    @Given("user to verify Profile settings page is displayed")
+    public void userToVerifyProfileSettingsPageIsDisplayed() {
+    }
+
+    @When("user scroll down to {string} tab")
+    public void userScrollDownToTab(String arg0) {
+    }
+
+    @And("user click on {string} tab")
+    public void userClickOnTab(String arg0) {
+    }
+
+    @And("user click on the preferable language")
+    public void userClickOnThePreferableLanguage() {
+    }
+
+    @Then("user to verify referable language was displayed correctly")
+    public void userToVerifyReferableLanguageWasDisplayedCorrectly() {
+    }
 }
