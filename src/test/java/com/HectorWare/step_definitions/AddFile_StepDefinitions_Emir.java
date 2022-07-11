@@ -1,19 +1,14 @@
 package com.HectorWare.step_definitions;
 
 import com.HectorWare.pages.AddFileEmirPage;
-import com.HectorWare.utilities.ConfigurationReader;
-import com.HectorWare.utilities.Driver;
-import com.HectorWare.utilities.Web_Utils;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 
 import java.awt.*;
 
-public class AddFile_StepDefinitions {
+public class AddFile_StepDefinitions_Emir {
 
     AddFileEmirPage addFileEmirPage = new AddFileEmirPage();
 
