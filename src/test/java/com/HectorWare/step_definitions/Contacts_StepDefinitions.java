@@ -18,10 +18,10 @@ public class Contacts_StepDefinitions {
     @Given("User clicks on the contacts button")
     public void user_clicks_on_the_contacts_button() {
         // to be deleted later on
-        Driver.getDriver().get(ConfigurationReader.getProperty("web.table.url"));
-        Driver.getDriver().findElement(By.xpath("//input[@name='user']")).sendKeys("Employee1");
-        Driver.getDriver().findElement(By.xpath("//input[@name='password']")).sendKeys("Employee123");
-        Driver.getDriver().findElement(By.xpath("//input[@type='submit']")).click();
+//        Driver.getDriver().get(ConfigurationReader.getProperty("web.table.url"));
+//        Driver.getDriver().findElement(By.xpath("//input[@name='user']")).sendKeys("Employee1");
+//        Driver.getDriver().findElement(By.xpath("//input[@name='password']")).sendKeys("Employee123");
+//        Driver.getDriver().findElement(By.xpath("//input[@type='submit']")).click();
 
         contactsFunctionalityPage.contactsButton.click();
     }
@@ -64,32 +64,50 @@ public class Contacts_StepDefinitions {
     }
 
     @Given("User clicks on the contact named {string}")
-    public void user_clicks_on_the_contact_named(String contactInContactsList) {
+    public void user_clicks_on_the_contact_named(String nameInContactList) {
+        List<WebElement> actualName = contactsFunctionalityPage.nameInContactList;
 
+        for (int i = 0; i < actualName.size(); i++) {
+            String eachContact = contactsFunctionalityPage.nameInContactList.get(i).toString();
+            if (eachContact.equals(nameInContactList)) {
+                contactsFunctionalityPage.nameInContactList.get(i).click();
+                break;
+            } else if (i == actualName.size()) {
+                Assert.assertTrue("Name is not in contacts list", false);
+            }
+        }
     }
 
+    /*
     @Given("User enters all required fields")
     public void user_enters_all_required_fields() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        contactsFunctionalityPage.companyInputBox.sendKeys("Cydeo");
+        contactsFunctionalityPage.titleInputBox.sendKeys("IT");
+        contactsFunctionalityPage.phoneInputBox.sendKeys("0123456789");
+        contactsFunctionalityPage.emailInputBox.sendKeys("abc@cydeo.com");
+        contactsFunctionalityPage.cityInputBox.sendKeys("London");
     }
 
     @Then("User verifies contact is successfully edited")
     public void user_verifies_contact_is_successfully_edited() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        Assert.assertTrue("company info error", contactsFunctionalityPage.companyInputBox.equals("Cydeo"));
+        Assert.assertTrue("title info error", contactsFunctionalityPage.titleInputBox.equals("IT"));
+        Assert.assertTrue("phone info error", contactsFunctionalityPage.phoneInputBox.equals("0123456789"));
+        Assert.assertTrue("email info error", contactsFunctionalityPage.emailInputBox.equals("abc@cydeo.com"));
+        Assert.assertTrue("city info error", contactsFunctionalityPage.cityInputBox.equals("London"));
     }
+     */
 
     @Given("User clicks on groups input box and selects {string} group")
     public void user_clicks_on_groups_input_box_and_selects_group(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        contactsFunctionalityPage.groupInputBox.click();
+        contactsFunctionalityPage.chosenGroup.click();
     }
 
     @Given("User clicks on {string} on the left column")
-    public void user_clicks_on_on_the_left_column(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    public void user_clicks_on_on_the_left_column(String string) throws InterruptedException {
+        Thread.sleep(5000);
+        contactsFunctionalityPage.cydeo10GroupTab.click();
     }
 
 
