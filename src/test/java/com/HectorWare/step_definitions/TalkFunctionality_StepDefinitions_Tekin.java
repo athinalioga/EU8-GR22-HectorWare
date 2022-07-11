@@ -40,6 +40,7 @@ public class TalkFunctionality_StepDefinitions_Tekin {
 
     @Then("the user clicks plus button")
     public void theUserClicksPlusButton() {
+
         talkFunctionalityPage.plusButton.click();
 
     }
