@@ -33,21 +33,3 @@ Feature: Add File Feature
     Given user click the plus button
     And user upload valid video files
     Then user should see the valid video files on the screen
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
