@@ -19,10 +19,10 @@ public class Contacts_StepDefinitions_Ayse {
     @Given("User clicks on the contacts button")
     public void user_clicks_on_the_contacts_button() {
         // to be deleted later on
-//        Driver.getDriver().get(ConfigurationReader.getProperty("web.table.url"));
-//        Driver.getDriver().findElement(By.xpath("//input[@name='user']")).sendKeys("Employee1");
-//        Driver.getDriver().findElement(By.xpath("//input[@name='password']")).sendKeys("Employee123");
-//        Driver.getDriver().findElement(By.xpath("//input[@type='submit']")).click();
+        Driver.getDriver().get(ConfigurationReader.getProperty("web.table.url"));
+        Driver.getDriver().findElement(By.xpath("//input[@name='user']")).sendKeys("Employee1");
+        Driver.getDriver().findElement(By.xpath("//input[@name='password']")).sendKeys("Employee123");
+        Driver.getDriver().findElement(By.xpath("//input[@type='submit']")).click();
 
         contactsFunctionalityPage.contactsButton.click();
     }
