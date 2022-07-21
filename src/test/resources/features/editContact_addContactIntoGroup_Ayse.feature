@@ -1,4 +1,4 @@
-Feature: Contact functionality
+Feature: Contact functionality - edit contact - add contact into a group
 
   Background: For the scenarios in the feature file, user is expected to be on the main page
 
@@ -9,11 +9,11 @@ Feature: Contact functionality
     And User refreshes the page
     Then User verifies contact named "cbd" is displayed on the contacts column
 
-  Scenario: Edit a contact that is already created
-    Given User clicks on the contact named "cbd"
-    And User enters all required fields
-    And User refreshes the page
-    Then User verifies contact is successfully edited
+  #Scenario: Edit a contact that is already created
+   # Given User clicks on the contact named "cbd"
+   # And User enters all required fields
+   # And User refreshes the page
+   # Then User verifies contact is successfully edited
 
   Scenario: Add a contact into a group
     Given User clicks on the contact named "cbd"

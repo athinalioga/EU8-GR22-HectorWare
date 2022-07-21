@@ -1,4 +1,4 @@
-Feature: Contact functionality
+Feature: Contact functionality - add contact
 
   Background: For the scenarios in the feature file, user is expected to be on the main page
     And User clicks on the contacts button
