@@ -1,4 +1,3 @@
-@emir
 Feature: Add File Feature
 
   Background: User is on the login page
