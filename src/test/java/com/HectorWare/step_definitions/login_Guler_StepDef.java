@@ -1,21 +1,43 @@
 package com.HectorWare.step_definitions;
 
-import io.cucumber.java.en.Given;
+import com.HectorWare.pages.CodePage;
+import com.HectorWare.utilities.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class login_Guler_StepDef {
 
-    @Given ("the user navigates to the url")
-        public void the_user_navigates_to_url(){
+    CodePage codePage = new CodePage();
 
-        }
-   @When ("the user enters username and password")
-    public void the_user_enters_username_and_password(){
+    @When("user enters {string} username")
+    public void user_enters_username(String username) {
+        Driver.getDriver().get("https://qa.hectorware.com/index.php/login?clear=1");
 
-   }
-   @ Then ("the user should see the main page")
-    public void the_user_should_see_the_main_page(){
+       codePage.inputUsername.sendKeys(username);
 
-   }
+    }
+
+    @When("user enters {string} password")
+    public void user_enters_password(String password) {
+
+      codePage.inputPassword.sendKeys(password);
+
+    }
+
+    @When("user clicks to login button")
+    public void user_clicks_to_login_button() {
+
+       codePage.loginButton.click();
+
+
+    }
+
+    @Then("user should see home page")
+    public void user_should_see_home_page() {
+
+        Assert.assertTrue(codePage.homeIcon.isDisplayed());
+
+
+    }
 }
