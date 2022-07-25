@@ -1,6 +1,7 @@
 Feature: Login
 
 	@WARE-638
+		@smoke
 	Scenario: Login with valid credentials
 		Given User is on Login search page
 		    When User types Employee1 in the Login username box

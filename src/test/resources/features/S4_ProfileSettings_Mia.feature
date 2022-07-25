@@ -4,6 +4,7 @@ Feature: Default
 	#
 	#AC: User can change any information under Profile Picture Settings page
 	@WARE-676
+		@regression
 	Scenario: User should able to change their profile picture from uploaded files
 		Given user is on the login page
 		    And user enters valid username "Employee1" and password "Employee123"
