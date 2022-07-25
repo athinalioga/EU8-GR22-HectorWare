@@ -8,7 +8,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
-public class MyStepdefs {
+public class Mia_Login_StepDefs {
 
     Login_Mia login_mia = new Login_Mia();
 
@@ -65,11 +65,11 @@ public class MyStepdefs {
         String actualMessage = login_mia.ErrorMsj.getText();
 
         try {
-            Assert.assertEquals("While assert warning message",expectedMessage,actualMessage);
-        }catch (Exception e){
+            Assert.assertEquals("While assert warning message", expectedMessage, actualMessage);
+        } catch (Exception e) {
             System.out.println("Please fill in the fields.");
         }
-}
+    }
 
     @When("user enter {string} Username in username field")
     public void userEnterUsernameInUsernameField(String arg0) {
@@ -100,6 +100,6 @@ public class MyStepdefs {
         String expectedMessage = "Wrong username or password.";
         String actualMessage = login_mia.WrongPasswordMsg.getText();
 
-        Assert.assertEquals("While assert warning message",expectedMessage,actualMessage);
+        Assert.assertEquals("While assert warning message", expectedMessage, actualMessage);
     }
 }

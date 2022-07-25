@@ -4,6 +4,7 @@ Feature: Default
 	#
 	#AC: All the users can log in with valid credentials
 	@WARE-678
+	@smoke
 	Scenario:  Login functionality
 		Given user is on the login page
 		    When user enters valid username "Employee1" and password "Employee123"
