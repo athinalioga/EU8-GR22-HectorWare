@@ -4,8 +4,18 @@ import com.HectorWare.utilities.ConfigurationReader;
 import com.HectorWare.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 public class Mahmut_Calendar_Page {
+    @FindBy(xpath = "(//tbody/tr[2])")
+    public WebElement eventTable;
+    @FindBy(xpath = "//button[contains(text(),'More')]")
+    public WebElement moreOption;
+    @FindBy(id = "app-sidebar")
+    public WebElement sideBar;
+    @FindBy(xpath = "//textarea[@title='Location']")
+    public WebElement locationBar;
+
     public void login() {
         Driver.getDriver().get(ConfigurationReader.getProperty("web.table.url"));
         WebElement username = Driver.getDriver().findElement(By.id("user"));
