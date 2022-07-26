@@ -36,7 +36,7 @@ public class AddFile_Emir_StepDefinitions {
     @Then("user should see the uploaded file on the screen")
     public void user_should_see_the_uploaded_file_on_the_screen() {
 
-        Web_Utils.waitForVisibility(addFileEmirPage.upTo10MBfileAudio,15);
+        Web_Utils.waitForVisibility(addFileEmirPage.upTo10MBfileAudio,45);
         Assert.assertTrue(addFileEmirPage.upTo10MBfileAudio.isDisplayed());
     }
 
@@ -61,7 +61,7 @@ public class AddFile_Emir_StepDefinitions {
     }
     @Then("user should see the valid document files on the screen")
     public void user_should_see_the_valid_document_files_on_the_screen() {
-        Web_Utils.waitForVisibility(addFileEmirPage.validDocumentFile,15);
+        Web_Utils.waitForVisibility(addFileEmirPage.validDocumentFile,45);
         Assert.assertTrue(addFileEmirPage.validDocumentFile.isDisplayed());
     }
 
