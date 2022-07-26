@@ -10,6 +10,7 @@ Feature: Default
 	#
 	#Each file must not exceed a maximum file size of 10MB. 
 	@WARE-682
+	@emir
 	Scenario: Verify that users can upload a maximum file size of 10MB at a time.
 		Given user is on the login page of the HectorWare Application
 		When user click the plus button

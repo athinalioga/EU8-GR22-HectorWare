@@ -37,7 +37,15 @@ public class EditFile_Emir_StepDefinitions {
 
     }
 
+    @When("user delete the selected file")
+    public void user_delete_the_selected_file() {
 
+
+    }
+    @Then("user should not see the selected file on the screen.")
+    public void user_should_not_see_the_selected_file_on_the_screen() {
+
+    }
 
 
 

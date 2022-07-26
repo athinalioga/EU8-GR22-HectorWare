@@ -32,15 +32,12 @@ public class AddFile_Emir_StepDefinitions {
 
     }
 
-
     @Then("user should see the uploaded file on the screen")
     public void user_should_see_the_uploaded_file_on_the_screen() {
 
-        Web_Utils.waitForVisibility(addFileEmirPage.upTo10MBfileAudio,45);
+        Web_Utils.waitForVisibility(addFileEmirPage.upTo10MBfileAudio,3);
         Assert.assertTrue(addFileEmirPage.upTo10MBfileAudio.isDisplayed());
     }
-
-
 
     @Given("user upload valid image files")
     public void user_upload_valid_image_files() throws AWTException {
@@ -48,28 +45,28 @@ public class AddFile_Emir_StepDefinitions {
         addFileEmirPage.validImageFileUpload();
 
     }
+
     @Then("user should see the valid image files on the screen")
     public void user_should_see_the_valid_image_files_on_the_screen() {
         Assert.assertTrue(addFileEmirPage.validImageFile.isDisplayed());
     }
 
-
-
     @Given("user upload valid document files")
     public void user_upload_valid_document_files() throws AWTException {
         addFileEmirPage.validDocumentFileUpload();
     }
+
     @Then("user should see the valid document files on the screen")
     public void user_should_see_the_valid_document_files_on_the_screen() {
 
         Assert.assertTrue(addFileEmirPage.validDocumentFile.isDisplayed());
     }
 
-
     @Given("user upload valid audio files")
     public void user_upload_valid_audio_files() throws AWTException {
         addFileEmirPage.validAudioFileUpload();
     }
+
     @Then("user should see the valid audio files on the screen")
     public void user_should_see_the_valid_audio_files_on_the_screen() {
         Assert.assertTrue(addFileEmirPage.validAudioFile.isDisplayed());
@@ -79,6 +76,7 @@ public class AddFile_Emir_StepDefinitions {
     public void user_upload_valid_video_files() throws AWTException {
         addFileEmirPage.validVideoFileUpload();
     }
+
     @Then("user should see the valid video files on the screen")
     public void user_should_see_the_valid_video_files_on_the_screen() {
         Assert.assertTrue(addFileEmirPage.validVideoFile.isDisplayed());
