@@ -7,6 +7,7 @@ Feature: Default
 	#{color:#de350b}*AC4:*{color} The application will only accept the following audio file types;
 	#.mp3, .m4a, .wav
 	@WARE-685
+	@RegressionTest
 	Scenario: Verify that the users upload only valid audio file types.
 		Given user is on the login page of the HectorWare Application
 		Given user click the plus button
