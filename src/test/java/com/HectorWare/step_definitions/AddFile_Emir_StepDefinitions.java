@@ -1,6 +1,7 @@
 package com.HectorWare.step_definitions;
 
 import com.HectorWare.pages.AddFile_EmirPage;
+import com.HectorWare.utilities.Web_Utils;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -34,6 +35,8 @@ public class AddFile_Emir_StepDefinitions {
 
     @Then("user should see the uploaded file on the screen")
     public void user_should_see_the_uploaded_file_on_the_screen() {
+
+        Web_Utils.waitForVisibility(addFileEmirPage.upTo10MBfileAudio,3);
         Assert.assertTrue(addFileEmirPage.upTo10MBfileAudio.isDisplayed());
     }
 
