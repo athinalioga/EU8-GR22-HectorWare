@@ -7,7 +7,7 @@ Feature: Default
 	#{color:#de350b}*AC3*{color}: The application will only accept the following document file types;
 	#.pdf, .doc, docx, .xls, xlsx, .ppt
 	@WARE-684
-	@SmokeTest
+	@wep
 	Scenario: Verify that the users upload only valid document file types.
 		Given user is on the login page of the HectorWare Application
 		Given user click the plus button
