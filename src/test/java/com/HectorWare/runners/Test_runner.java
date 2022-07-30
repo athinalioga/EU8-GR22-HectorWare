@@ -14,10 +14,4 @@ import org.junit.runner.RunWith;
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber",
         },
         features = "src/test/resources/features",
-        glue = "com/HectorWare/step_definitions",
-       
-
-
-
-) public class Test_runner{
-}
+      
